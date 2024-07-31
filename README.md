@@ -1,16 +1,17 @@
+# My Project
 
-# linux.dotfiles
+## Features
 
-[GitHub repo](https://github.com/mshaevitch/linux.dotfiles)
+<details>
+<summary>Click to expand!</summary>
 
-List all files (including hidden)
+- Feature 1
+- Feature 2
+- Feature 3
+- And so on...
 
-```bash
-ls -la
-```
+</details>
 
-Copy .zshrc
+## Installation
 
-```bash
-cp ~/.zshrc ~/git/linux.dotfiles
-```
+Follow these steps to install the project.
