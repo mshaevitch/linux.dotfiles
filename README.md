@@ -1,17 +1,22 @@
-# My Project
 
-## Features
+# linux.dotfiles
 
-<details>
-<summary>Click to expand!</summary>
+[GitHub repo](https://github.com/mshaevitch/linux.dotfiles)
 
-- Feature 1
-- Feature 2
-- Feature 3
-- And so on...
+List all files (including hidden)
 
-</details>
+```bash
+ls -la
+```
 
-## Installation
+Copy .zshrc
 
-Follow these steps to install the project.
+```bash
+cp ~/.zshrc ~/git/linux.dotfiles
+```
+
+Create nvim config dir (and parent dirs)
+
+```bash
+mkdir -p ~/.config/nvim
+```
