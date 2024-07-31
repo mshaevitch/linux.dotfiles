@@ -3,11 +3,7 @@
 
 [GitHub repo](https://github.com/mshaevitch/linux.dotfiles)
 
-List all files (including hidden)
-
-```bash
-ls -la
-```
+## Zsh
 
 Copy .zshrc
 
@@ -15,8 +11,24 @@ Copy .zshrc
 cp ~/.zshrc ~/git/linux.dotfiles
 ```
 
+Add Zsh alias
+
+```bash
+vim $ZSH_CUSTOM/aliases.zsh
+```
+
+## Neovim
+
 Create nvim config dir (and parent dirs)
 
 ```bash
 mkdir -p ~/.config/nvim
+```
+
+## Misc
+
+List all files (including hidden)
+
+```bash
+ls -la
 ```
