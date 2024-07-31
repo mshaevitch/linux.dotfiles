@@ -19,10 +19,16 @@ vim $ZSH_CUSTOM/aliases.zsh
 
 ## Neovim
 
-Create nvim config dir (and parent dirs)
+(If not created already) Create nvim config dir (and parent dirs)
 
 ```bash
 mkdir -p ~/.config/nvim
+```
+
+Copy nvim config
+
+```bash
+cp ~/git/linux.dotfiles/init.lua ~/.config/nvim/
 ```
 
 ## Misc
