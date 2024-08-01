@@ -3,6 +3,13 @@
 
 [GitHub repo](https://github.com/mshaevitch/linux.dotfiles)
 
+> [!NOTE]  
+> If this repo was cloned using HTTPS, after switching to SSH, run:
+
+```bash
+git remote set-url origin git@github.com:mshaevitch/linux.dotfiles.git
+```
+
 ## Zsh
 
 Copy .zshrc
