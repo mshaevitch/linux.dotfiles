@@ -22,6 +22,18 @@ Copy dotfiles to user home folder
 cp -a ~/git/linux.dotfiles/home/.[!.]* ~/
 ```
 
+Install Zsh
+
+```bash
+sudo apt install -y zsh
+```
+
+Set Zsh as default shell
+
+```bash
+chsh -s $(which zsh)
+```
+
 Switch from HTTPS to SSH
 
 ```bash
