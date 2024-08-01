@@ -5,6 +5,9 @@ sudo add-apt-repository ppa:git-core/ppa || { echo "Failed to add Git PPA"; exit
 sudo apt update || { echo "Failed to update package list"; exit 1; }
 sudo apt upgrade || { echo "Failed to upgrade packages"; exit 1; }
 
+mkdir -p ~/git
+git clone https://github.com/mshaevitch/linux.dotfiles.git ~/git/linux.dotfiles
+
 # Copy all dotfiles to home folder
 cp -a ~/git/linux.dotfiles/home/.[!.]* ~/ || { echo "Failed to copy dotfiles"; exit 1; }
 
