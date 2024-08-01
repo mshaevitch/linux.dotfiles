@@ -19,7 +19,12 @@ zstyle :compinstall filename '/home/tav/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+autoload -U compinit; compinit
+source ~/somewhere/fzf-tab.plugin.zsh
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -27,3 +32,5 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # Aliases
 alias cls='clear'
 alias reload='source ~/.zshrc'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
