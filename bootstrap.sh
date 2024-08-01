@@ -5,7 +5,7 @@ cp -a ~/git/linux.dotfiles/home/.[!.]* ~/ || { echo "Failed to copy dotfiles"; e
 
 # Set up Neovim
 mkdir -p ~/.config/nvim
-cp ~/git/linux.dotfiles/init.lua ~/.config/nvim/
+cp ~/git/linux.dotfiles/nvim/init.lua ~/.config/nvim/
 sudo snap install nvim --classic
 
 
