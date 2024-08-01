@@ -16,25 +16,13 @@ Create git folder and clone this repo
 mkdir -p ~/git && git clone https://github.com/mshaevitch/linux.dotfiles.git ~/git/linux.dotfiles
 ```
 
-Copy dotfiles to user home folder
+Run bootstrap script
 
 ```bash
-cp -a ~/git/linux.dotfiles/home/.[!.]* ~/
+~/git/linux.dotfiles/bootstrap.sh
 ```
 
-Install Zsh
-
-```bash
-sudo apt install -y zsh
-```
-
-Set Zsh as default shell
-
-```bash
-chsh -s $(which zsh)
-```
-
-Switch from HTTPS to SSH
+(Optional) Switch from HTTPS to SSH
 
 ```bash
 git remote set-url origin git@github.com:mshaevitch/linux.dotfiles.git
