@@ -1,0 +1,5 @@
+[user]
+	email = michael.shaevitch@gmail.com
+	name = Michael Shaevitch
+[core]
+	editor = nvim
