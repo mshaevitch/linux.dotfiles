@@ -11,7 +11,7 @@ export PATH="$PATH:/snap/bin"
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-bindkey -v
+bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/tav/.zshrc'
@@ -22,15 +22,14 @@ compinit
 
 autoload -U compinit; compinit
 source ~/somewhere/fzf-tab.plugin.zsh
-
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Aliases
 alias cls='clear'
 alias reload='source ~/.zshrc'
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias vim='nvim'
