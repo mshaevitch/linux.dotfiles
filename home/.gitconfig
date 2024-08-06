@@ -3,3 +3,5 @@
 	name = Michael Shaevitch
 [core]
 	editor = nvim
+[init]
+	defaultBranch = main
