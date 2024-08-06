@@ -24,13 +24,16 @@ compinit
 # End of lines added by compinstall
 
 autoload -U compinit; compinit
-# source ~/somewhere/fzf-tab.plugin.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-eval "$(/home/tav/.local/bin/mise activate zsh)"
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Fzf
+git -C ~/.fzf pull > /dev/null 2>&1 && yes | ~/.fzf/install > /dev/null 2>&1
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.zsh/fzf-tab/fzf-tab.plugin.zsh
 
 # Aliases
 alias cls='clear'
