@@ -27,3 +27,15 @@ Run bootstrap script
 ```bash
 git remote set-url origin git@github.com:mshaevitch/linux.dotfiles.git
 ```
+
+(Optional) Generate SSH Key
+
+```bash
+ssh-keygen -t ed25519 -C "michael.shaevitch@gmail.com"
+```
+
+(Optional) Copy Public SSH Key
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
