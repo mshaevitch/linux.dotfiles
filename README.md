@@ -39,3 +39,10 @@ ssh-keygen -t ed25519 -C "michael.shaevitch@gmail.com"
 ```bash
 cat ~/.ssh/id_ed25519.pub
 ```
+
+(Optional) Load key into ssh-agent
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
