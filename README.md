@@ -3,6 +3,15 @@
 
 ## Steps
 
+Set up Zsh
+
+```bash
+sudo systemctl daemon-reload
+echo "# This is a comment" > ~/.zshrc
+sudo apt install -y zsh
+zsh
+```
+
 Update git to latest upstream PPA
 
 ```bash
@@ -19,7 +28,7 @@ mkdir -p ~/git && git clone https://github.com/mshaevitch/linux.dotfiles.git ~/g
 Run bootstrap script
 
 ```bash
-~/git/linux.dotfiles/bootstrap.sh
+~/git/linux.dotfiles/bootstrap.zsh
 ```
 
 (Optional) Switch from HTTPS to SSH
