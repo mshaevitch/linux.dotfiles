@@ -3,7 +3,11 @@
 # Set up Neovim
 mkdir -p ~/.config/nvim
 cp ~/git/linux.dotfiles/nvim/init.lua ~/.config/nvim/
-sudo snap install nvim --classic
+
+# Install Neovim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
 
 sudo apt update -y && sudo apt install -y gpg sudo wget curl
 sudo install -dm 755 /etc/apt/keyrings
