@@ -24,6 +24,3 @@ git clone https://github.com/Aloxaf/fzf-tab ~/.zsh/fzf-tab
 
 # Copy all dotfiles to home folder
 cp -a ~/git/linux.dotfiles/home/.[!.]* ~/ || { echo "Failed to copy dotfiles"; exit 1; }
-
-# Set Zsh as default shell
-chsh -s $(which zsh) || { echo "Failed to change default shell"; exit 1; }
