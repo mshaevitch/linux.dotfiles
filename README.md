@@ -6,7 +6,6 @@
 Set up Zsh
 
 ```bash
-sudo systemctl daemon-reload
 echo "# This is a comment" > ~/.zshrc
 sudo apt install -y zsh
 zsh
