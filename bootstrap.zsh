@@ -8,6 +8,7 @@ cp ~/git/linux.dotfiles/nvim/init.lua ~/.config/nvim/
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 sudo rm -rf /opt/nvim
 sudo tar -C /opt -xzf nvim-linux64.tar.gz
+rm nvim-linux64.tar.gz
 
 # p10k - https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#manual
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
