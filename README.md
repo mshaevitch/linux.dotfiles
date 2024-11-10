@@ -6,6 +6,7 @@
 Set up Zsh
 
 ```bash
+sudo apt update
 echo "# This is a comment" > ~/.zshrc
 sudo apt install -y zsh
 zsh
