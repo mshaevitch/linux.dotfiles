@@ -6,10 +6,10 @@
 Set up Zsh
 
 ```bash
-sudo apt update
 echo "# This is a comment" > ~/.zshrc
+sudo apt update
 sudo apt install -y zsh
-zsh
+chsh -s $(which zsh)
 ```
 
 Update git to latest upstream PPA
