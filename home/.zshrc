@@ -45,3 +45,5 @@ alias la='ls -la --color=auto'
 alias ll='git status --short'
 alias gg='git status --short'
 alias p='pnpm'
+
+eval $(ssh-agent -s) > /dev/null 2>&1
