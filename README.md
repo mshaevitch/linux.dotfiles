@@ -56,5 +56,11 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 ```
 
+(Optional) Copy SSH config file
+
+```bash
+cp ~/git/linux.dotfiles/ssh/config ~/.ssh/
+```
+
 Import the keys to GitHub:
 https://github.com/settings/keys
