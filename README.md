@@ -40,7 +40,7 @@ git remote set-url origin git@github.com:mshaevitch/linux.dotfiles.git
 (Optional) Generate SSH Key
 
 ```bash
-ssh-keygen -t ed25519 -C "michael.shaevitch@gmail.com"
+ssh-keygen -t ed25519 -C "example@gmail.com"
 ```
 
 (Optional) Copy Public SSH Key
